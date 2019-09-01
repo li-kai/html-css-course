@@ -166,6 +166,31 @@
             <dt>&lt;body&gt;&lt;/body&gt;</dt>
             <dd>Visual content</dd>
           </dl>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >div tag
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    html tags
+                  </a>
+                </li>
+                https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning
+              </ul>
+            </div>
+          </div>
           <aside class="notes">
             I like to think of the structure of html files like a person
             dancing. You start with the head, which contains all the
@@ -185,8 +210,7 @@
               &lt;body&gt;
                 Hi I'm Kai
               &lt;/body&gt;
-            &lt;/html&gt;
-          </code></pre>
+            &lt;/html&gt;</code></pre>
           <aside class="notes">
             Here this is the most basic html we can have. We add a title, which
             appears at the top of the browser. The body, which shows as content.
@@ -197,18 +221,14 @@
         <section>
           <h2>Adding headings</h2>
           <pre><code data-trim data-noescape class="html">
-              &lt;!DOCTYPE html&gt;
-              &lt;html&gt;
-                &lt;head&gt;
-                  &lt;title&gt;Portfolio&lt;/title&gt;
-                &lt;/head&gt;
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Portfolio&lt;/title&gt;
+              &lt;/head&gt;
               &lt;body&gt;
-                <mark>&lt;h1&gt;</mark>
-                  Hi I'm Kai
-                <mark>&lt;/h1&gt;</mark>
-                <mark>&lt;h2&gt;</mark>
-                  CEO of Nothing
-                <mark>&lt;/h2&gt;</mark>
+                <mark>&lt;h1&gt;</mark>Hi I'm Kai<mark>&lt;/h1&gt;</mark>
+                <mark>&lt;h2&gt;</mark>CEO of Nothing<mark>&lt;/h2&gt;</mark>
               &lt;/body&gt;
             &lt;/html&gt;
           </code></pre>
@@ -238,18 +258,14 @@
         <section>
           <h2>Adding images</h2>
           <pre><code data-trim data-noescape class="html">
-              &lt;!DOCTYPE html&gt;
-              &lt;html&gt;
-                &lt;head&gt;
-                  &lt;title&gt;Portfolio&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                &lt;h1&gt;
-                  Hi I'm Kai
-                &lt;/h1&gt;
-                &lt;h2&gt;
-                  CEO of Nothing
-                &lt;/h2&gt;
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Portfolio&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;h1&gt;Hi I'm Kai&lt;/h1&gt;
+                &lt;h2&gt;CEO of Nothing&lt;/h2&gt;
                 <mark>&lt;img src="./img/building.jpg" alt="building"/&gt;</mark>
               &lt;/body&gt;
             &lt;/html&gt;
@@ -287,15 +303,166 @@
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>Adding containers</h2>
+          <pre><code data-trim data-noescape class="html">
+            &lt;body&gt;
+              <mark>&lt;header&gt;</mark>
+                <mark>&lt;hgroup&gt;</mark>
+                  &lt;h1&gt;Hi I'm Kai&lt;/h1&gt;
+                  &lt;h2&gt;CEO of Nothing&lt;/h2&gt;
+                <mark>&lt;hgroup&gt;</mark>
+                <mark>&lt;div&gt;</mark>
+                  &lt;img src="./img/building.jpg" alt="building"/&gt;
+                <mark>&lt;div&gt;</mark>
+              <mark>&lt;/header&gt;</mark>
+              <mark>&lt;main&gt;</mark>
+              <mark>&lt;/main&gt;</mark>
+            &lt;/body&gt;
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    container tags
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >div tag
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes"></aside>
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>Adding lists</h2>
+          <pre><code data-trim data-noescape class="html">
+            ...
+              &lt;/header&gt;
+              &lt;main&gt;  
+                I know:
+                <mark>&lt;ol&gt;</mark>
+                  <mark>&lt;li&gt;</mark>HTML<mark>&lt;/li&gt;</mark>
+                  <mark>&lt;li&gt;</mark>CSS<mark>&lt;/li&gt;</mark>
+                <mark>&lt;/ol&gt;</mark>
+                Follow me at:
+                <mark>&lt;ul&gt;</mark>
+                  <mark>&lt;li&gt;</mark>Instagram<mark>&lt;/li&gt;</mark>
+                  <mark>&lt;li&gt;</mark>Twitter<mark>&lt;/li&gt;</mark>
+                <mark>&lt;/ul&gt;</mark>
+              &lt;/main&gt;
+            &lt;/body&gt;
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    ul tag
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >ol tag
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes"></aside>
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>Adding anchors</h2>
+          <pre><code data-trim data-noescape class="html">
+            ...
+                Follow me at:
+                &lt;ul&gt;
+                  &lt;li&gt;
+                    <mark>&lt;a href="https://instagram.com/falconets"&gt;</mark>
+                      Instagram
+                    <mark>&lt;/a&gt;</mark>
+                  &lt;/li&gt;
+                  &lt;li&gt;
+                    <mark>&lt;a href="https://twitter.com/falconets"&gt;</mark>
+                      Twitter
+                    <mark>&lt;/a&gt;</mark>
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/main&gt;
+            &lt;/body&gt;
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    a tag
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Adding forms</h2>
+          <pre><code data-trim data-noescape class="html">
+            ...
+              &lt;/main&gt;
+              <mark>&lt;footer&gt;</mark>
+                Get a cat:
+                <mark>&lt;form action="https://cataas.com/cat" method="get"&gt;</mark>
+                <mark>&lt;label for="width"&gt;</mark>Width: <mark>&lt;/label&gt;</mark>
+                <mark>&lt;input type="number" name="width" /&gt;</mark>
+                <mark>&lt;button type="submit"&gt;</mark>Submit<mark>&lt;/button&gt;</mark>
+                <mark>&lt;/form&gt;</mark>
+              <mark>&lt;/footer&gt;</mark>
+            &lt;/body&gt;
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    form tag
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes"></aside>
         </section>
       </div>
     </div>
