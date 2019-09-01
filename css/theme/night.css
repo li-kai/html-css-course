@@ -296,3 +296,7 @@ body {
 @media print {
   .backgrounds {
     background-color: #111; } }
+
+.reveal .further-reading {
+  font-size: 2rem;
+  opacity: 0.7; }

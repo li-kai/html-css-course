@@ -65,6 +65,13 @@
 
         <section>
           <h2>What we will be making:</h2>
+          <a
+            href="https://HTML-and-CSS-Course--li-kai.repl.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Personal Portfolio
+          </a>
           <aside class="notes">
             A personal portfolio project.
           </aside>
@@ -98,23 +105,185 @@
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>Writing code</h2>
+          <div>
+            Code is precise. Content is not.
+          </div>
+          <aside class="notes">
+            Before we type any code, I'd just like to point out that code, the
+            parts that computers understand, are precise. Extra symbols or typos
+            will cause errors. If you see any green squigly line, that probably
+            means you typed something the computer doesn't understand. However,
+            for content, the parts where I describe myself, is not. Feel free to
+            type in anything you want, and make the portfolio truly yours.
+          </aside>
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>index.html</h2>
+          <aside class="notes">
+            This is the html file that your web browser reads and displays.
+          </aside>
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>HTML tags</h2>
+          <div>Open and close</div>
+          <code data-trim data-noescape class="html fragment">
+            &lt;html&gt;
+          </code>
+          <code data-trim data-noescape class="html fragment">
+            &lt;/html&gt; </code
+          ><br />
+          <code data-trim data-noescape class="html fragment">
+            &lt;button&gt;
+          </code>
+          <code data-trim data-noescape class="html fragment">
+            &lt;/button&gt;
+          </code>
+          <br />
+          <div class="fragment">
+            <code data-trim data-noescape class="html">
+              &lt;img/&gt;
+            </code>
+            <br />
+            <code data-trim data-noescape class="html">
+              &lt;input/&gt;
+            </code>
+          </div>
+          <aside class="notes">
+            HTML is made up of tags. A tag for most cases, must be opened and
+            closed. There are rare cases where they are self closing, most
+            commonly the img and input tags.
+          </aside>
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>head and body</h2>
+          <dl>
+            <dt>&lt;head&gt;&lt;/head&gt;</dt>
+            <dd>Metadata</dd>
+            <dt>&lt;body&gt;&lt;/body&gt;</dt>
+            <dd>Visual content</dd>
+          </dl>
+          <aside class="notes">
+            I like to think of the structure of html files like a person
+            dancing. You start with the head, which contains all the
+            information, the metadata, about how it is going to perform. The
+            body, which everyone else sees, then displays the moves and actions.
+          </aside>
         </section>
 
         <section>
-          <h2>Title</h2>
+          <h2>head and body</h2>
+          <pre><code data-trim data-noescape class="html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Portfolio&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                Hi I'm Kai
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <aside class="notes">
+            Here this is the most basic html we can have. We add a title, which
+            appears at the top of the browser. The body, which shows as content.
+            We can edit this and play run, and see them change as expected.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Adding headings</h2>
+          <pre><code data-trim data-noescape class="html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Portfolio&lt;/title&gt;
+                &lt;/head&gt;
+              &lt;body&gt;
+                <mark>&lt;h1&gt;</mark>
+                  Hi I'm Kai
+                <mark>&lt;/h1&gt;</mark>
+                <mark>&lt;h2&gt;</mark>
+                  CEO of Nothing
+                <mark>&lt;/h2&gt;</mark>
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >h1 to h6
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            Here we can see the roots of html as a document format, because we
+            have terms like headers, headings and footers. Things used in the
+            printing industries like newspapers. A heading is something used to
+            display titles and to show importance. Headings range from h1 to h6.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Adding images</h2>
+          <pre><code data-trim data-noescape class="html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Portfolio&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;h1&gt;
+                  Hi I'm Kai
+                &lt;/h1&gt;
+                &lt;h2&gt;
+                  CEO of Nothing
+                &lt;/h2&gt;
+                <mark>&lt;img src="./img/building.jpg" alt="building"/&gt;</mark>
+              &lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >img tag
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://learn-the-web.algonquindesign.ca/topics/paths-folders/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    relative paths
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            In order to show images, we use the img tag. In the tag, we specific
+            a "src" attribute, which points to a file. If your file is in some
+            other place, you might need to change the file name. It is good
+            practice to add an "alt" tag to describe your image.
+          </aside>
         </section>
 
         <section>

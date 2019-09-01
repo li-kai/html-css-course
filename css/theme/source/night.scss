@@ -55,3 +55,8 @@ $selectionBackgroundColor: #ff5138;
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal .further-reading {
+    font-size: 2rem;
+    opacity: 0.7;
+}
