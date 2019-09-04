@@ -205,6 +205,8 @@
             Here this is the most basic html we can have. We add a title, which
             appears at the top of the browser. The body, which shows as content.
             We can edit this and play run, and see them change as expected.
+            Things look a little ugly right now because we're not doing any
+            styling, yet.
           </aside>
         </section>
 
@@ -453,6 +455,166 @@
             </div>
           </div>
           <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Adding CSS</h2>
+          <pre><code data-trim data-noescape class="html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Portfolio&lt;/title&gt;
+                <mark>&lt;link rel="stylesheet" href="style.css" /&gt;</mark>
+              &lt;/head&gt;
+              &lt;body&gt;
+              ...
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    link tag
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            Things are going to get a lot prettier. We're finally adding in some
+            CSS styles! To start, we need a link tag in the head tag. This tells
+            the browser to download the CSS stylesheet when it reads this HTML
+            file. Remember that the head doesn't no any presentation, so you
+            shouldn't see anything new appear in your browser.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Writing CSS</h2>
+          <pre><code data-trim data-noescape class="css">
+            body {
+              background: teal;
+            }              
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    MDN: CSS guide
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/background"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    CSS property: background
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            Let's write our first CSS property. We first have selectors,
+            targeting which HTML elements we want, then properties describing
+            how they should look. Here, we're saying we want the background of
+            the body to be teal.
+          </aside>
+        </section>
+
+        <section>
+          <h2>More CSS</h2>
+          <pre><code data-trim data-noescape class="html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Portfolio&lt;/title&gt;
+                &lt;link rel="stylesheet" href="style.css" /&gt;
+                <mark>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css" /&gt;</mark>
+              &lt;/head&gt;
+              &lt;body&gt;
+              ...
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    link tag
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            The next thing we're going to do is apply a base layer of styles.
+            This helps to normalize our CSS across different browsers, fixes
+            some visual bugs and generally provides a good foundation for us to
+            work with. The moment you add this and run it, your HTML should have
+            changed.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Adding fonts</h2>
+          <pre><code data-trim data-noescape class="html">
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Portfolio&lt;/title&gt;
+                &lt;link rel="stylesheet" href="style.css" /&gt;
+                &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css" /&gt;
+                <mark>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap" /&gt;</mark>
+              &lt;/head&gt;
+              &lt;body&gt;
+              ...
+          </code></pre>
+          <div class="further-reading">
+            Further reading:
+            <div>
+              <ul>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    link tag
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://fonts.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Google Fonts
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            We're adding a stylesheet here from fonts.google.com, which then
+            downloads fonts when the browser reads the file.
+          </aside>
         </section>
       </div>
     </div>
