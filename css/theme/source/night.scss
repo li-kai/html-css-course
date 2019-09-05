@@ -42,10 +42,24 @@ $inter-font-path: '../../fonts' !default;
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #111;
 
-$mainFont: 'Inter', sans-serif;
+$font-family-sans-serif:
+  // Safari for OS X and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for OS X (San Francisco)
+  BlinkMacSystemFont,
+  // Windows
+  "Segoe UI",
+  // Android
+  "Roboto",
+  // Basic web fallback
+  "Helvetica Neue", Arial, sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$mainFont: 'Inter', $font-family-sans-serif;
 $linkColor: #ff5138;
 $linkColorHover: lighten( $linkColor, 20% );
-$headingFont: 'Inter-SemiBold', Impact, sans-serif;
+$headingFont: 'Inter-SemiBold', $font-family-sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: -0.03em;
 $headingTextTransform: none;
