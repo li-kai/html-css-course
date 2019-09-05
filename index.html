@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/reveal.css" />
     <link rel="stylesheet" href="css/theme/night.css" />
     <link rel="stylesheet" href="lib/css/monokai.css" />
+    <script src="https://unpkg.com/feather-icons" defer></script>
     <script src="js/reveal.min.js" defer></script>
   </head>
   <body>
@@ -30,6 +31,13 @@
               >Kai
             </a>
           </p>
+        </section>
+
+        <section>
+          <h2>Slides</h2>
+          <a href="//slides.lik.ai" target="_blank" rel="noopener noreferrer"
+            >slides.lik.ai
+          </a>
         </section>
 
         <section>
@@ -85,15 +93,15 @@
           <ul>
             <li>
               <a
-                href="https://codesandbox.io/s/dawn-leaf-lub2b"
+                href="https://repl.it/@li_kai/HTML-and-CSS-Course-Template"
                 target="_blank"
                 rel="noopener noreferrer"
-                >CodeSandbox
+              >
                 <img
-                  alt="Edit lub2b"
+                  alt="Repl.it"
                   class="plain"
-                  style="margin:0;"
-                  src="https://codesandbox.io/static/img/play-codesandbox.svg"
+                  style="margin:0;background:white;"
+                  src="https://repl.it/public/images/logo-small.png"
                 />
               </a>
               or
@@ -121,6 +129,36 @@
 
         <section>
           <h2>index.html</h2>
+          <div
+            style="display:flex;flex-direction:column;width:90%;margin:auto;background:#222;padding:1rem;"
+          >
+            <div style="display:flex;margin-bottom:1rem;" class="fragment">
+              <figure style="font-size:1.5rem">
+                <i data-feather="chrome"></i>
+                <figcaption>browser</figcaption>
+              </figure>
+              <span style="padding-left:2rem;">Can I have "index.html"?</span>
+            </div>
+            <div
+              style="display:flex;margin-bottom:1rem;align-self:flex-end;"
+              class="fragment"
+            >
+              <span style="padding-right:2rem;">Here you go</span>
+              <figure style="font-size:1.5rem">
+                <i data-feather="server"></i>
+                <figcaption>server</figcaption>
+              </figure>
+            </div>
+            <div style="display:flex;margin-bottom:1rem;" class="fragment">
+              <figure style="font-size:1.5rem">
+                <i data-feather="chrome"></i>
+                <figcaption>browser</figcaption>
+              </figure>
+              <span style="padding-left:2rem;"
+                >Thanks, let me present it to the user</span
+              >
+            </div>
+          </div>
           <aside class="notes">
             This is the html file that your web browser reads and displays.
           </aside>
@@ -444,17 +482,62 @@
         </section>
 
         <section>
+          <h2>style.css</h2>
+          <div
+            style="display:flex;flex-direction:column;width:90%;margin:auto;background:#222;padding:1rem;"
+          >
+            <div style="display:flex;margin-bottom:1rem;">
+              <figure style="font-size:1.5rem">
+                <i data-feather="chrome"></i>
+                <figcaption>browser</figcaption>
+              </figure>
+              <span style="padding-left:2rem;">Can I have "index.html"?</span>
+            </div>
+            <div style="display:flex;margin-bottom:1rem;align-self:flex-end;">
+              <span style="padding-right:2rem;">Here you go</span>
+              <figure style="font-size:1.5rem">
+                <i data-feather="server"></i>
+                <figcaption>server</figcaption>
+              </figure>
+            </div>
+            <div style="display:flex;margin-bottom:1rem;" class="fragment">
+              <figure style="font-size:1.5rem">
+                <i data-feather="chrome"></i>
+                <figcaption>browser</figcaption>
+              </figure>
+              <span style="padding-left:2rem;"
+                >"index.html" says to get "style.css"</span
+              >
+            </div>
+            <div
+              style="display:flex;margin-bottom:1rem;align-self:flex-end;"
+              class="fragment"
+            >
+              <span style="padding-right:2rem;">Here you go</span>
+              <figure style="font-size:1.5rem">
+                <i data-feather="server"></i>
+                <figcaption>server</figcaption>
+              </figure>
+            </div>
+          </div>
+          <aside class="notes">
+            This is the stylesheet file that we will download when the html gets
+            downloaded. Things are going to get a lot prettier.
+          </aside>
+        </section>
+
+        <section>
           <h2>Adding CSS</h2>
           <pre><code data-trim data-noescape class="html">
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-              &lt;head&gt;
-                &lt;title&gt;Portfolio&lt;/title&gt;
-                <mark>&lt;link rel="stylesheet" href="style.css" /&gt;</mark>
-              &lt;/head&gt;
-              &lt;body&gt;
-              ...
-          </code></pre>
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Portfolio&lt;/title&gt;
+                  <mark>&lt;link rel="stylesheet" href="style.css" /&gt;</mark>
+                &lt;/head&gt;
+                &lt;body&gt;
+                ...
+            </code></pre>
           <div class="further-reading">
             <h6>Further reading:</h6>
             <ul>
@@ -470,11 +553,90 @@
             </ul>
           </div>
           <aside class="notes">
-            Things are going to get a lot prettier. We're finally adding in some
-            CSS styles! To start, we need a link tag in the head tag. This tells
-            the browser to download the CSS stylesheet when it reads this HTML
-            file. Remember that the head doesn't no any presentation, so you
-            shouldn't see anything new appear in your browser.
+            We're finally adding in some CSS styles! To start, we need a link
+            tag in the head tag. This tells the browser to download the CSS
+            stylesheet when it reads this HTML file. Remember that the head
+            doesn't no any presentation, so you shouldn't see anything new
+            appear in your browser.
+          </aside>
+        </section>
+
+        <section>
+          <h2>More CSS</h2>
+          <pre><code data-trim data-noescape class="html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Portfolio&lt;/title&gt;
+                  &lt;link rel="stylesheet" href="style.css" /&gt;
+                  <mark>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css" /&gt;</mark>
+                &lt;/head&gt;
+                &lt;body&gt;
+                ...
+            </code></pre>
+          <div class="further-reading">
+            <h6>Further reading:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  link tag
+                </a>
+              </li>
+            </ul>
+          </div>
+          <aside class="notes">
+            The next thing we're going to do is apply a base layer of styles.
+            This helps to normalize our CSS across different browsers, fixes
+            some visual bugs and generally provides a good foundation for us to
+            work with. The moment you add this and run it, your HTML should have
+            changed.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Adding fonts</h2>
+          <pre><code data-trim data-noescape class="html">
+              &lt;!DOCTYPE html&gt;
+              &lt;html&gt;
+                &lt;head&gt;
+                  &lt;title&gt;Portfolio&lt;/title&gt;
+                  &lt;link rel="stylesheet" href="style.css" /&gt;
+                  &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css" /&gt;
+                  <mark>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap" /&gt;</mark>
+                &lt;/head&gt;
+                &lt;body&gt;
+                ...
+            </code></pre>
+          <div class="further-reading">
+            <h6>Further reading:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  link tag
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://fonts.google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Fonts
+                </a>
+              </li>
+            </ul>
+          </div>
+          <aside class="notes">
+            We're adding a stylesheet here from fonts.google.com, which then
+            downloads fonts when the browser reads the file.
           </aside>
         </section>
 
@@ -483,7 +645,7 @@
           <pre><code data-trim data-noescape class="css">
             body {
               background: teal;
-            }              
+            }
           </code></pre>
           <div class="further-reading">
             <h6>Further reading:</h6>
@@ -517,82 +679,272 @@
         </section>
 
         <section>
-          <h2>More CSS</h2>
-          <pre><code data-trim data-noescape class="html">
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-              &lt;head&gt;
-                &lt;title&gt;Portfolio&lt;/title&gt;
-                &lt;link rel="stylesheet" href="style.css" /&gt;
-                <mark>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css" /&gt;</mark>
-              &lt;/head&gt;
-              &lt;body&gt;
-              ...
+          <h2>Styling with fonts</h2>
+          <pre><code data-trim data-noescape class="css">
+              body {
+                font-family: 'Open Sans', sans-serif;
+              }
+
+              h1, h2, h3, h4, h5, h6 {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+              }
           </code></pre>
           <div class="further-reading">
             <h6>Further reading:</h6>
             <ul>
               <li>
                 <a
-                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  link tag
+                  CSS property: font-family
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CSS property: font-weight
                 </a>
               </li>
             </ul>
           </div>
           <aside class="notes">
-            The next thing we're going to do is apply a base layer of styles.
-            This helps to normalize our CSS across different browsers, fixes
-            some visual bugs and generally provides a good foundation for us to
-            work with. The moment you add this and run it, your HTML should have
-            changed.
+            Now we're adding in the fonts that we have downloaded. Fonts make
+            for an easy way to make your text look good.
           </aside>
         </section>
 
         <section>
-          <h2>Adding fonts</h2>
+          <h2>CSS classes</h2>
+          <pre><code data-trim data-noescape class="css">
+            .intro {
+                height: 50%;
+            }
+          </code></pre>
           <pre><code data-trim data-noescape class="html">
-            &lt;!DOCTYPE html&gt;
-            &lt;html&gt;
-              &lt;head&gt;
-                &lt;title&gt;Portfolio&lt;/title&gt;
-                &lt;link rel="stylesheet" href="style.css" /&gt;
-                &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-reboot.min.css" /&gt;
-                <mark>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap" /&gt;</mark>
-              &lt;/head&gt;
-              &lt;body&gt;
-              ...
+            ...
+            &lt;body&gt;
+              &lt;header <mark>class="intro"</mark>&gt;
+                &lt;hgroup&gt;
+                  &lt;h1&gt;Hi I'm Kai&lt;/h1&gt;
+                  &lt;h2&gt;CEO of Nothing&lt;/h2&gt;
+                &lt;hgroup&gt;
+                &lt;div&gt;
+                  &lt;img src="./img/building.jpg" alt="building"/&gt;
+                &lt;div&gt;
+              &lt;/header&gt;
+            ...
           </code></pre>
           <div class="further-reading">
             <h6>Further reading:</h6>
             <ul>
               <li>
                 <a
-                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  link tag
+                  CSS classes
                 </a>
               </li>
               <li>
                 <a
-                  href="https://fonts.google.com"
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/height"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Google Fonts
+                  CSS property: height
                 </a>
               </li>
             </ul>
           </div>
-          <aside class="notes">
-            We're adding a stylesheet here from fonts.google.com, which then
-            downloads fonts when the browser reads the file.
-          </aside>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Flex box</h2>
+          <pre><code data-trim data-noescape class="css">
+            .intro-header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+          </code></pre>
+          <pre><code data-trim data-noescape class="html">
+            ...
+            &lt;body&gt;
+              &lt;header class="intro"&gt;
+                &lt;hgroup <mark>class="intro-header"</mark>&gt;
+                  &lt;h1&gt;Hi I'm Kai&lt;/h1&gt;
+                  &lt;h2&gt;CEO of Nothing&lt;/h2&gt;
+                &lt;hgroup&gt;
+                &lt;div&gt;
+                  &lt;img src="./img/building.jpg" alt="building"/&gt;
+                &lt;div&gt;
+              &lt;/header&gt;
+            ...
+          </code></pre>
+          <div class="further-reading">
+            <h6>Further reading:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Flexbox Playground
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Flexbox
+                </a>
+              </li>
+            </ul>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Styling content</h2>
+          <pre><code data-trim data-noescape class="css">
+            .intro-header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 1.5rem;
+            }
+
+            .container {
+              padding: 1.5rem;
+            }
+          </code></pre>
+          <pre><code data-trim data-noescape class="html">
+            ...
+            &lt;body&gt;
+              &lt;header class="intro"&gt;
+                &lt;hgroup class="intro-header"&gt;
+                  &lt;h1&gt;Hi I'm Kai&lt;/h1&gt;
+                  &lt;h2&gt;CEO of Nothing&lt;/h2&gt;
+                &lt;hgroup&gt;
+                &lt;div <mark>class="container"</mark>&gt;
+                  &lt;img src="./img/building.jpg" alt="building"/&gt;
+                &lt;div&gt;
+              &lt;/header&gt;
+            ...
+          </code></pre>
+          <div class="further-reading">
+            <h6>Further reading:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CSS property: padding
+                </a>
+              </li>
+            </ul>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Styling images</h2>
+          <pre><code data-trim data-noescape class="css">
+              .intro-img {
+                  object-fit: cover;
+                  width: 100%;
+                  height: 100%;
+              }
+            </code></pre>
+          <pre><code data-trim data-noescape class="html">
+              ...
+              &lt;body&gt;
+                &lt;header class="intro"&gt;
+                  &lt;hgroup class="intro-header"&gt;
+                    &lt;h1&gt;Hi I'm Kai&lt;/h1&gt;
+                    &lt;h2&gt;CEO of Nothing&lt;/h2&gt;
+                  &lt;hgroup&gt;
+                  &lt;div class="container"&gt;
+                    &lt;img <mark>class="intro-img"</mark> src="./img/building.jpg" alt="building"/&gt;
+                  &lt;div&gt;
+                &lt;/header&gt;
+              ...
+            </code></pre>
+          <div class="further-reading">
+            <h6>Further reading:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CSS property: object-fit
+                </a>
+              </li>
+            </ul>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Classes can be reused</h2>
+          <pre><code data-trim data-noescape class="html">
+            ...
+            &lt;/header&gt;
+            &lt;main <mark>class="container"</mark>&gt;  
+              I know:
+              ...
+            &lt;/main&gt;
+            &lt;footer <mark>class="container"</mark>&gt;  
+            ...
+          </code></pre>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>Q & A</h2>
+          <iframe
+            height="400"
+            style="width:100%"
+            src="//wall.sli.do/event/lpswvq4l?section=7c745fca-ca56-49dd-9b6c-cfeeaaf4f65b&info_modal_version=default&open_info_modal=true"
+            frameborder="0"
+          ></iframe>
+          <div class="further-reading">
+            <a
+              href="https://HTML-and-CSS-Course--li-kai.repl.co"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Final product reference
+            </a>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
+          <h2>That's it!</h2>
+          <a
+            href="https://HTML-and-CSS-Course--li-kai.repl.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Thank you!
+          </a>
+          <aside class="notes"></aside>
         </section>
       </div>
     </div>

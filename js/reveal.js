@@ -6173,3 +6173,5 @@ link.href = window.location.search.match(/print-pdf/gi)
   ? 'css/print/pdf.css'
   : 'css/print/paper.css';
 document.getElementsByTagName('head')[0].appendChild(link);
+
+feather.replace({ width: 48, height: 48 });
