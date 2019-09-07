@@ -870,6 +870,50 @@
         </section>
 
         <section>
+          <h2>Box Model</h2>
+          <div style="color:#333;font-size:1rem;">
+            <div id="margin" style="padding:1rem;background:lightsalmon;">Margin
+              <div id="border" style="padding:1rem;background:rgb(252, 238, 201);">Border
+                <div id="padding" style="padding:1rem;background:rgb(210, 244, 210);">Padding
+                  <div id="content" style="padding:1rem;background:lightblue;">
+                    lorem ipsum
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="background:#999;">
+            <label for="margin-range">Margin</label><input type="range" min="0" max="3" value="1" id="margin-range" />
+            <label for="border-range">Border</label><input type="range" min="0" max="3" value="1" id="border-range" />
+            <label for="padding-range">Padding</label><input type="range" min="0" max="3" value="1" id="padding-range" />
+          </div>
+          <script>
+            ["margin", "border", "padding"].forEach((id) => {
+              const selector = id + "-range";
+              document.getElementById(selector).addEventListener("change", (el) => {
+                document.getElementById(id).style.padding = el.target.value + "rem";
+              });
+            });
+          </script>
+          <br/>
+          <div class="further-reading">
+            <h6>Further reading:</h6>
+            <ul>
+              <li>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  CSS Box Model
+                </a>
+              </li>
+            </ul>
+          </div>
+          <aside class="notes"></aside>
+        </section>
+
+        <section>
           <h2>Styling images</h2>
           <pre><code data-trim data-noescape class="css">
               .intro-img {
